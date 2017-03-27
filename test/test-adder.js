@@ -32,7 +32,7 @@ describe('adder', function() {
     ];
     // prove that an error is raised for bad inputs
     badInputs.forEach(function(input) {
-      (function() {
+ (function() {
           adder(input[0], input[1])
       }).should.throw(Error);
     });
